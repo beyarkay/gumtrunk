@@ -77,6 +77,7 @@ def main():
     df = pd.concat((old_df, df))
     # And write the df back to disk
     df.to_csv(path, index=False)
+    print(f"Data saved as a CSV under {path}.")
 
 
 if __name__ == "__main__":
